@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+	<meta charset="utf-8">
+	<title>JavaScript</title>
+	<link rel="stylesheet" href="styl.css">
+</head>
+<body>
+<div class="container">
+<header>
+	Instrukcja warunkowa w JavaScript
+</header>
+<nav>
+	<script src="menu.js"></script>
+</nav>
+<article>
+	<h1>Switch</h1>
+	<p>W pewnych przypadkach zamiast wielu instrukcji if lub if...else możesz użyć instrukcji <b>switch</b> (przełącznika).</p>
+	<p>Przykład. Zamiast wielu instrukcji if...else</p>
+	<img src="images/img10.png" alt="wiele instrukcji if...else">
+	<p>użyj instrukcji switch</p>	
+	<img src="images/img11.png" alt="instrukcja switch">
+	<p>Elementy instrukcji:</p>
+	<ul class="not">
+		<li><b>switch</b> - słowo kluczowe, w nawiasie znajduje się wyrażenie, które zwraca liczbę całkowitą (np. 1, 2) lub pojedynczy znak (np. "a", "B").</li>
+		<li><b>case</b> - poszczególne przypadki wartości zwróconej przez wyrażenie w nawiasie, można grupować po kilka przypadków (gdy powinny się wykonać identyczne instrukcje).</li>
+		<li><b>break</b> - przerywa wykonywanie instrukcji znajdujących się niżej w bloku switch i przechodzi do instrukcji znajdującej się po tym bloku.</li>
+		<li><b>default</b> - instrukcje po tym słowie kluczowym wykonają się, gdy zwrócona wartość z nawiasu nie odpowiada żadnemu z przypadków (case). Instrukcja default jest opcjonalna (może nie wystąpić).</li>
+	</ul>
+	<a href="https://www.w3schools.com/js/js_switch.asp" target="_blank">Więcej o instrukcji switch</a>
+	
+	<h2>Zadanie 5.</h2>
+	<p>W bloku znajdującym się niżej dołącz skrypt, w którym zdefiniujesz zmienną przechowującą numer miesiąca w roku, a następnie wyświetlisz, do której pory roku należy miesiąc o tym numerze. Przykład:<br>
+	<b><i>Miesiąc o numerze 10 to jesień.</i></b><br>
+	Jeżeli użytkownik podał nieprawidłowy numer miesiąca, skrypt wyświetla komunikat<br>
+	<b><i>Miesiąc o numerze 13 nie istnieje.</i></b>
+	</p>
+	
+	<div class="zadanie">
+		<!-- Zadanie 5 -->
+		<script>
+			let x = 41;
+			switch(x){
+				case 1:
+				case 2:
+				case 12:
+					document.write("Miesiąc " +x+ " to zima")
+						break;
+				case 3:
+				case 4:
+				case 5:
+					document.write("Miesiąc " +x+ " to wiosna")
+						break;
+				case 6:
+				case 7:
+				case 8:
+					document.write("Miesiąc " +x+  " to lato")
+					break;
+				case 9:
+				case 10:
+				case 11:
+					document.write("Miesiąc " +x+ " to jesień")
+					break;
+				default:
+					document.write("Miesiąc o numerze "+x+ " nie istnieje");
+
+			}
+		</script>
+	</div>
+
+</article>
+</div>
+</body>
+</html>

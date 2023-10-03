@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+	<meta charset="utf-8">
+	<title>JavaScript</title>
+	<link rel="stylesheet" href="styl.css">
+</head>
+<body>
+<div class="container">
+<header>
+	Instrukcja warunkowa w JavaScript
+</header>
+<nav>
+	<script src="menu.js"></script>
+</nav>
+<article>
+	<h1>Instrukcja warunkowa if</h1>
+	<p>Instrukcja warunkowa pozwala na wykonanie ciągu instrukcji, jeżeli jest spełniony podany warunek. Instrukcję warunkową utworzysz przy pomocy słowa kluczowego <b>if</b>.</p>
+	<img src="images/img01.png" alt="schemat instrukcji if">
+	<img src="images/img02.png" alt="instrukcja if w JavaScript">
+	<p>W warunkach występują <b>operatory porównań</b> (w wyniku ich działania otrzymujemy wartość true/false):</p>
+	<table>
+		<tr><th>Operator porównania</th><th>Znaczenie</th></tr>
+		<tr><td><b>==</b></td><td>równe (pojedynczego znaku równości używa się do podstawienia zmiennej!)</td></tr>
+		<tr><td><b>!=</b></td><td>nierówne</td></tr>
+		<tr><td><b>===</b></td><td>równe i tego samego typu</td></tr>
+		<tr><td><b>!==</b></td><td>nierówne lub równe, ale nie tego samego typu</td></tr>
+		<tr><td><b>&lt;</b></td><td>mniejsze</td></tr>
+		<tr><td><b>&gt;</b></td><td>większe</td></tr>
+		<tr><td><b>&lt;=</b></td><td>mniejsze lub równe</td></tr>
+		<tr><td><b>&gt;=</b></td><td>większe lub równe</td></tr>
+	</table>
+	<a href="https://www.w3schools.com/js/js_comparisons.asp" target="_blank">Więcej o operatorach porównania</a>
+	<p>Przykłady warunków:</p>
+	<img src="images/img03.png" alt="warunki">
+	<p>Warunki można łączyć przy pomocy <b>operatorów logicznych</b>:</p>
+	<table>
+		<tr><th>Operator logiczny</th><th>Znaczenie</th></tr>
+		<tr><td><b>&amp;&amp;</b></td><td><b>koniunkcja</b>, iloczyn logiczny ("i", AND). Wyrażenie jest prawdziwe, gdy wszystkie warunki połączone tym operatorem są prawdziwe.</td></tr>
+		<tr><td><b>||</b></td><td><b>alternatywa</b>, suma logiczna ("lub", OR). Wyrażenie jest prawdziwe, gdy chociaż jeden z warunków połączonych tym operatorem jest prawdziwy.</td></tr>
+		<tr><td><b>!</b></td><td><b>negacja</b> ("nie", NOT). Zmienia wartość logiczną na przeciwną (true -> false, false -> true)</td></tr>
+	</table>
+	<p>Przykłady operatorów logicznych:</p>
+	<img src="images/img04.png" alt="operatory logiczne">
+	
+	<h2>Zadanie 1.</h2>
+	<p>W bloku znajdującym się niżej dołącz skrypt, w którym podasz liczbę całkowitą. Skrypt wyświetla odpowiedni napis w zależności od tego, czy podana liczba jest parzysta, czy też nieparzysta (wraz z podaną liczbą). Przykład wyprowadzenia wyników (podano liczbę 6):</p>
+	<p><b><i>Liczba 6 jest parzysta.</i></b></p>
+	
+	<div class="zadanie">
+		<!-- Zadanie 1 -->
+		<script>
+			let liczba = 6;
+			if (liczba % 2 == 0) {
+				document.write("Liczba " + liczba + " jest parzysta");
+			} else {
+				document.write("Liczba " + liczba + " jest nieparzysta");
+			}
+
+
+
+		</script>
+	</div>
+
+</article>
+</div>
+</body>
+</html>
